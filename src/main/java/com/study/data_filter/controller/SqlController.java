@@ -22,6 +22,6 @@ public class SqlController {
 
     @GetMapping("/scoreList")
     public List<UserMovieScore> getScoreList() {
-        return sqlService.getScoreList();
+        return sqlService.getBaseList();
     }
 }

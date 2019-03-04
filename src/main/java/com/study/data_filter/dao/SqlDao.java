@@ -14,5 +14,8 @@ public interface SqlDao {
     List<User> getUserList();
 
     @Select(value = "select * from base_u1")
-    List<UserMovieScore> getScoreList();
+    List<UserMovieScore> getBaseList();
+
+    @Select(value = "select * from test_u1")
+    List<UserMovieScore> getTestList();
 }
